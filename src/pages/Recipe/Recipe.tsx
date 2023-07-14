@@ -12,7 +12,6 @@ const Recipe: FC = () => {
 
   const id: number = Number(recipeId);
 
-  // const location = useLocation();
 
   // const backLinkLocationRef = useRef(location.state?.from ?? "/");
 
