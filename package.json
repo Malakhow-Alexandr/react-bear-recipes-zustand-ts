@@ -1,8 +1,8 @@
 {
-  "name": "react-bear-recipes-zustand-ts",
+  "name": "react-beer-recipes-zustand-ts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Malakhow-Alexandr.github.io/react-bear-recipes-zustand-ts/",
+  "homepage": "https://Malakhow-Alexandr.github.io/react-beer-recipes-zustand-ts/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.2.6",
     "@types/styled-components": "^5.1.26",
     "axios": "^1.4.0",
+    "immer": "^10.0.2",
     "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,7 +24,8 @@
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.3",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.3.9"
   },
   "scripts": {
     "start": "react-scripts start",

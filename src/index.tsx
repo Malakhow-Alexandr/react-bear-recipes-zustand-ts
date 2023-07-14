@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/react-bear-recipes-zustand-ts">
+    <BrowserRouter basename="/react-beer-recipes-zustand-ts">
       <App />
     </BrowserRouter>
   </React.StrictMode>
