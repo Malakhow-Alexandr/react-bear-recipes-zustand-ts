@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-bear-recipes-zustand-ts/static/css/main.7cda0caf.css",
+    "main.js": "/react-bear-recipes-zustand-ts/static/js/main.69340ae5.js",
+    "index.html": "/react-bear-recipes-zustand-ts/index.html",
+    "main.7cda0caf.css.map": "/react-bear-recipes-zustand-ts/static/css/main.7cda0caf.css.map",
+    "main.69340ae5.js.map": "/react-bear-recipes-zustand-ts/static/js/main.69340ae5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cda0caf.css",
+    "static/js/main.69340ae5.js"
+  ]
+}
