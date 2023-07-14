@@ -1,7 +1,9 @@
 import { FC } from "react";
 import { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import useStore from "store/store";
 import { fetchBeerRecipes } from "services/fetchApi";
+import RecipesList from "components/RecipesList/RecipesList";
 
 const Recipes: FC = () => {
     const beerRecipes = useStore((state) => state.beerRecipes);
@@ -9,8 +11,9 @@ const Recipes: FC = () => {
     const setBeerRecipes = useStore((state) => state.setBeerRecipes);
     const setCurrentPage = useStore((state) => state.setCurrentPage);
   
+    const location = useLocation();
   
-  
+    
     useEffect(() => {
       const getRecepies = async (page: number) => {
         try {
@@ -29,13 +32,7 @@ const Recipes: FC = () => {
   
   return (
     <div>
-      <ul>
-        {beerRecipes.map((recipe) => (
-          <li key={recipe.id}>
-            <p>{recipe.name}</p>
-          </li>
-        ))}
-      </ul>
+      <RecipesList recipes={beerRecipes} location={location}/>
       <button
         onClick={() => {
           setCurrentPage(currentPage - 1);

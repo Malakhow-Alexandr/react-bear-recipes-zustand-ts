@@ -1,47 +1,3 @@
-interface Volume {
-  value: number;
-  unit: string;
-}
-
-interface MashTemp {
-  temp: {
-    value: number;
-    unit: string;
-  };
-  duration: number | null;
-}
-
-interface Fermentation {
-  temp: {
-    value: number;
-    unit: string;
-  };
-}
-
-interface Malt {
-  name: string;
-  amount: {
-    value: number;
-    unit: string;
-  };
-}
-
-interface Hop {
-  name: string;
-  amount: {
-    value: number;
-    unit: string;
-  };
-  add: string;
-  attribute: string;
-}
-
-interface Ingredients {
-  malt: Malt[];
-  hops: Hop[];
-  yeast: string;
-}
-
 export interface Beer {
   id: number;
   name: string;
@@ -57,17 +13,63 @@ export interface Beer {
   srm: number;
   ph: number;
   attenuation_level: number;
-  volume: Volume;
-  boil_volume: Volume;
+  volume: {
+    value: number;
+    unit: string;
+  };
+  boil_volume: {
+    value: number;
+    unit: string;
+  };
   method: {
-    mash_temp: MashTemp[];
-    fermentation: Fermentation;
+    mash_temp: {
+      temp: {
+        value: number;
+        unit: string;
+      };
+      duration: number | null;
+    }[];
+    fermentation: {
+      temp: {
+        value: number;
+        unit: string;
+      };
+    };
     twist: null;
   };
-  ingredients: Ingredients;
+  ingredients: {
+    malt: {
+      name: string;
+      amount: {
+        value: number;
+        unit: string;
+      };
+    }[];
+    hops: {
+      name: string;
+      amount: {
+        value: number;
+        unit: string;
+      };
+      add: string;
+      attribute: string;
+    }[];
+    yeast: string;
+  };
   food_pairing: string[];
   brewers_tips: string;
   contributed_by: string;
+}
+
+export interface RecipesListProps {
+  recipes: Beer[];
+  location: {
+    pathname: string;
+    search: string;
+    hash: string;
+    state: any | null;
+    key: string;
+  };
 }
 
 export interface State {
