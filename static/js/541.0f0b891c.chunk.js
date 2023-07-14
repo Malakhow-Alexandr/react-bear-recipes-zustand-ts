@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_beer_recipes_zustand_ts=self.webpackChunkreact_beer_recipes_zustand_ts||[]).push([[541],{541:function(e,r,s){s.r(r);var t=s(184);r.default=function(){return(0,t.jsx)("div",{children:(0,t.jsx)("p",{children:"Hello from FavoriteRecipes"})})}}}]);
+//# sourceMappingURL=541.0f0b891c.chunk.js.map
