@@ -70,16 +70,16 @@ export interface Beer {
   contributed_by: string;
 }
 
-
-
 export interface State {
   beerRecipes: Beer[];
   favoriteBeerRecipes: Beer[];
+  beerRecipe: Beer[];
   currentPage: number;
   isLoading: boolean;
   errors: string[];
-  setBeerRecipes: (beerRecipes: Beer[]) => void,
-      setCurrentPage: (currentPage: number) => void,
-      setLoading: (isLoading: boolean) => void,
-      setErrors: (errors: string[]) => void,
+  setBeerRecipes: (beerRecipes: Beer[]) => void;
+  setBeerRecipe: (beerRecipe: Beer[]) => void;
+  setCurrentPage: (currentPage: number) => void;
+  setLoading: (isLoading: boolean) => void;
+  setErrors: (errors: string[]) => void;
 }

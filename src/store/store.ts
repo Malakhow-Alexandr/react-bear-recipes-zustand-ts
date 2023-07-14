@@ -8,10 +8,12 @@ const useStore = create<State>()(
     immer((set) => ({
       beerRecipes: [] as Beer[],
       favoriteBeerRecipes: [] as Beer[],
+      beerRecipe: [] as Beer[],
       currentPage: 1,
       isLoading: false,
       errors: [],
       setBeerRecipes: (beerRecipes) => set({ beerRecipes }),
+      setBeerRecipe: (beerRecipe) => set({ beerRecipe }),
       setCurrentPage: (currentPage: number) => set({ currentPage }),
       setLoading: (isLoading: boolean) => set({ isLoading }),
       setErrors: (errors: string[]) => set({ errors }),
