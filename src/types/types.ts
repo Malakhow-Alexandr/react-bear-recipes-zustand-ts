@@ -42,7 +42,7 @@ interface Ingredients {
   yeast: string;
 }
 
-interface Beer {
+export interface Beer {
   id: number;
   name: string;
   tagline: string;
@@ -70,6 +70,16 @@ interface Beer {
   contributed_by: string;
 }
 
+
+
 export interface State {
-    be
+  beerRecipes: Beer[];
+  favoriteBeerRecipes: Beer[];
+  currentPage: number;
+  isLoading: boolean;
+  errors: string[];
+  setBeerRecipes: (beerRecipes: Beer[]) => void,
+      setCurrentPage: (currentPage: number) => void,
+      setLoading: (isLoading: boolean) => void,
+      setErrors: (errors: string[]) => void,
 }
