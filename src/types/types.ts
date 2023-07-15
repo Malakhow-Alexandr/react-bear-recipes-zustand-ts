@@ -77,11 +77,12 @@ export interface State {
   favoriteBeerRecipes: Beer[];
   beerRecipe: Beer[];
   currentPage: number;
-  isLoading: boolean;
+  isLoading: boolean | false; 
   errors: string[];
   setBeerRecipes: (beerRecipes: Beer[]) => void;
   setBeerRecipe: (beerRecipe: Beer[]) => void;
   setCurrentPage: (currentPage: number) => void;
-  setLoading: (isLoading: boolean) => void;
+  setFavoriteBeerRecipes: (newRecipe: Beer) => void;
+  setLoading: (isLoading: boolean | false) => void; 
   setErrors: (errors: string[]) => void;
 }

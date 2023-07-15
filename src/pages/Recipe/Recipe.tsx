@@ -19,7 +19,6 @@ const Recipe: FC = () => {
       try {
         const response = await fetchBeerRecipe(id);
         setBeerRecipe(response);
-        console.log(response);
       } catch (error) {
         console.log(error);
       }

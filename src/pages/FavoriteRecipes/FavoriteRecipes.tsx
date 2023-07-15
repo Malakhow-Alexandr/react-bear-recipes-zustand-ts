@@ -1,7 +1,14 @@
-import {FC} from "react";
+import { FC } from "react";
+import useStore from "store/store";
+import RecipesList from "components/RecipesList/RecipesList";
+import { useLocation } from "react-router-dom";
 
 const FavoriteRecipes: FC = () => {
-    return(<div><p>Hello from FavoriteRecipes</p></div>)
-}
+  const favoriteBeerRecipe = useStore((state) => state.favoriteBeerRecipes);
+  const location = useLocation()
+  return (
+    <RecipesList recipes={favoriteBeerRecipe} location={location}/>
+  );
+};
 
-export default FavoriteRecipes
+export default FavoriteRecipes;

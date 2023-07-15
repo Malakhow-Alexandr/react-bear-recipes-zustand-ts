@@ -14,6 +14,10 @@ const useStore = create<State>()(
       errors: [],
       setBeerRecipes: (beerRecipes) => set({ beerRecipes }),
       setBeerRecipe: (beerRecipe) => set({ beerRecipe }),
+      setFavoriteBeerRecipes: (newRecipe) =>
+      set((state) => {
+        state.favoriteBeerRecipes.push(newRecipe);
+      }),
       setCurrentPage: (currentPage: number) => set({ currentPage }),
       setLoading: (isLoading: boolean) => set({ isLoading }),
       setErrors: (errors: string[]) => set({ errors }),
