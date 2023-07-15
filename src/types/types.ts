@@ -80,7 +80,7 @@ export interface BackLinkProps {
     state: any | null;
     key: string;
   };
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 export interface State {
   beerRecipes: Beer[];

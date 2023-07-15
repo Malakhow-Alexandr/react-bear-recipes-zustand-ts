@@ -11,9 +11,13 @@ const FavoriteRecipes: FC = () => {
   const backLinkLocationRef = useRef(location.state?.from ?? "/");
   return (
     <>
-      <BackLink to={backLinkLocationRef.current}>Back</BackLink>
+      <BackLink to={backLinkLocationRef.current}></BackLink>
       {favoriteBeerRecipe.length === 0 ? (
-        <img src={NothingInFavorite} alt="NotningInFavorite" />
+        <img
+          src={NothingInFavorite}
+          style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+          alt="NotningInFavorite"
+        />
       ) : (
         <RecipesList recipes={favoriteBeerRecipe} location={location} />
       )}

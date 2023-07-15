@@ -61,7 +61,7 @@ export const FavoriteButton = styled.button`
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 225px;
+  top: 229px;
   left: 220px;
   cursor: pointer;
   &:hover > svg {
