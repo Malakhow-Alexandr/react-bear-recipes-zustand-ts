@@ -4,11 +4,13 @@ import { RecipesListProps } from "types/types";
 import useStore from "store/store";
 
 const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
-  
   const beerRecipes = useStore((state) => state.beerRecipes);
   const favoriteBeerRecipes = useStore((state) => state.favoriteBeerRecipes);
-  const setFavoriteBeerRecipes = useStore(
-    (state) => state.setFavoriteBeerRecipes
+  const addFavoriteBeerRecipes = useStore(
+    (state) => state.addFavoriteBeerRecipes
+  );
+  const removeFromFavorite = useStore(
+    (state) => state.removeFavoriteBeerRecipes
   );
 
   const handleRightClick = (id: number) => {
@@ -17,13 +19,24 @@ const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
       (recipe) => recipe.id === id
     );
     if (selectedRecipe && !selectedFavoriteRecipe) {
-      setFavoriteBeerRecipes(selectedRecipe);
+      addFavoriteBeerRecipes(selectedRecipe);
     }
+  };
+
+  const handlerDeleteFromFavorite = (id: number) => {
+    const updatedFavoriteRecipes = favoriteBeerRecipes.filter(
+      (recipe) => recipe.id !== id
+    );
+    removeFromFavorite(updatedFavoriteRecipes);
   };
 
   return (
     <>
       {recipes.map(({ id, name }) => {
+        const isFavorite = favoriteBeerRecipes.some(
+          (recipe) => recipe.id === id
+        );
+
         return (
           <Item key={id}>
             <LinkStyled
@@ -34,6 +47,11 @@ const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
             >
               <p>{name}</p>
             </LinkStyled>
+            {isFavorite && (
+              <button onClick={() => handlerDeleteFromFavorite(id)}>
+                Delete
+              </button>
+            )}
           </Item>
         );
       })}

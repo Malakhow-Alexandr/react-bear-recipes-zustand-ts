@@ -72,17 +72,28 @@ export interface RecipesListProps {
   };
 }
 
+export interface BackLinkProps {
+  to: {
+    pathname: string;
+    search: string;
+    hash: string;
+    state: any | null;
+    key: string;
+  };
+  children: React.ReactNode;
+}
 export interface State {
   beerRecipes: Beer[];
   favoriteBeerRecipes: Beer[];
   beerRecipe: Beer[];
   currentPage: number;
-  isLoading: boolean | false; 
+  isLoading: boolean | false;
   errors: string[];
   setBeerRecipes: (beerRecipes: Beer[]) => void;
   setBeerRecipe: (beerRecipe: Beer[]) => void;
   setCurrentPage: (currentPage: number) => void;
-  setFavoriteBeerRecipes: (newRecipe: Beer) => void;
-  setLoading: (isLoading: boolean | false) => void; 
+  addFavoriteBeerRecipes: (newRecipe: Beer) => void;
+  removeFavoriteBeerRecipes: (newRecipesArray: Beer[]) => void;
+  setLoading: (isLoading: boolean | false) => void;
   setErrors: (errors: string[]) => void;
 }
