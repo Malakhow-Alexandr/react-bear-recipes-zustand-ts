@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { LinkStyled, Item } from "./RecipeListItem.styled";
+import { LinkStyled, Item, BeerPicture } from "./RecipeListItem.styled";
 import { RecipesListProps } from "types/types";
 import useStore from "store/store";
 
@@ -32,7 +32,7 @@ const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
 
   return (
     <>
-      {recipes.map(({ id, name }) => {
+      {recipes.map(({ id, name, image_url }) => {
         const isFavorite = favoriteBeerRecipes.some(
           (recipe) => recipe.id === id
         );
@@ -46,6 +46,7 @@ const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
               onContextMenu={() => handleRightClick(id)}
             >
               <p>{name}</p>
+              <BeerPicture src={image_url} alt={name} width='90' height='220' />
             </LinkStyled>
             {isFavorite && (
               <button onClick={() => handlerDeleteFromFavorite(id)}>

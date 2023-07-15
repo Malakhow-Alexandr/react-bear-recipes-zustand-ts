@@ -1,5 +1,13 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+
+export const Container = styled.div`
+  width: 1400px;
+  margin-left: auto; 
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right:15px;
+`
 
 export const Header = styled.header`
   display: flex;
@@ -21,9 +29,19 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   color: black;
   font-weight: 500;
+  transition: all 250ms ease;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 
   &.active {
     color: white;
-    background-color: #0051ff;
+    background-color: #936104;
+  }
+  &.active:hover,
+  &.active:focus {
+    transform: scale(1);
   }
 `;
