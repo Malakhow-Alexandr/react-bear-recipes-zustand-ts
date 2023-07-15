@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/react-beer-recipes-zustand-ts/static/css/main.7cda0caf.css",
-    "main.js": "/react-beer-recipes-zustand-ts/static/js/main.9ffc23b6.js",
-    "static/js/97.cc908432.chunk.js": "/react-beer-recipes-zustand-ts/static/js/97.cc908432.chunk.js",
-    "static/js/211.4508b027.chunk.js": "/react-beer-recipes-zustand-ts/static/js/211.4508b027.chunk.js",
+    "main.js": "/react-beer-recipes-zustand-ts/static/js/main.2a9b3021.js",
+    "static/js/285.936ca368.chunk.js": "/react-beer-recipes-zustand-ts/static/js/285.936ca368.chunk.js",
+    "static/js/211.b1250976.chunk.js": "/react-beer-recipes-zustand-ts/static/js/211.b1250976.chunk.js",
     "static/js/541.0f0b891c.chunk.js": "/react-beer-recipes-zustand-ts/static/js/541.0f0b891c.chunk.js",
-    "static/js/27.1a45e606.chunk.js": "/react-beer-recipes-zustand-ts/static/js/27.1a45e606.chunk.js",
+    "static/js/27.b764d21a.chunk.js": "/react-beer-recipes-zustand-ts/static/js/27.b764d21a.chunk.js",
     "index.html": "/react-beer-recipes-zustand-ts/index.html",
     "main.7cda0caf.css.map": "/react-beer-recipes-zustand-ts/static/css/main.7cda0caf.css.map",
-    "main.9ffc23b6.js.map": "/react-beer-recipes-zustand-ts/static/js/main.9ffc23b6.js.map",
-    "97.cc908432.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/97.cc908432.chunk.js.map",
-    "211.4508b027.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/211.4508b027.chunk.js.map",
+    "main.2a9b3021.js.map": "/react-beer-recipes-zustand-ts/static/js/main.2a9b3021.js.map",
+    "285.936ca368.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/285.936ca368.chunk.js.map",
+    "211.b1250976.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/211.b1250976.chunk.js.map",
     "541.0f0b891c.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/541.0f0b891c.chunk.js.map",
-    "27.1a45e606.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/27.1a45e606.chunk.js.map"
+    "27.b764d21a.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/27.b764d21a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.9ffc23b6.js"
+    "static/js/main.2a9b3021.js"
   ]
 }
