@@ -1,27 +1,29 @@
 {
   "files": {
     "main.css": "/react-beer-recipes-zustand-ts/static/css/main.7cda0caf.css",
-    "main.js": "/react-beer-recipes-zustand-ts/static/js/main.97276989.js",
-    "static/js/97.f5a6f302.chunk.js": "/react-beer-recipes-zustand-ts/static/js/97.f5a6f302.chunk.js",
-    "static/js/211.040fb5ad.chunk.js": "/react-beer-recipes-zustand-ts/static/js/211.040fb5ad.chunk.js",
-    "static/js/541.9cf8e7bb.chunk.js": "/react-beer-recipes-zustand-ts/static/js/541.9cf8e7bb.chunk.js",
-    "static/js/544.a96ef0b9.chunk.js": "/react-beer-recipes-zustand-ts/static/js/544.a96ef0b9.chunk.js",
-    "static/js/128.65e5517c.chunk.js": "/react-beer-recipes-zustand-ts/static/js/128.65e5517c.chunk.js",
+    "main.js": "/react-beer-recipes-zustand-ts/static/js/main.7fc21d3f.js",
+    "static/js/925.601733b0.chunk.js": "/react-beer-recipes-zustand-ts/static/js/925.601733b0.chunk.js",
+    "static/js/211.5fa60cca.chunk.js": "/react-beer-recipes-zustand-ts/static/js/211.5fa60cca.chunk.js",
+    "static/js/353.65c7333a.chunk.js": "/react-beer-recipes-zustand-ts/static/js/353.65c7333a.chunk.js",
+    "static/js/369.89d6724e.chunk.js": "/react-beer-recipes-zustand-ts/static/js/369.89d6724e.chunk.js",
+    "static/js/520.7b8da4f0.chunk.js": "/react-beer-recipes-zustand-ts/static/js/520.7b8da4f0.chunk.js",
+    "static/js/617.8086511e.chunk.js": "/react-beer-recipes-zustand-ts/static/js/617.8086511e.chunk.js",
     "static/js/384.b6ef12d0.chunk.js": "/react-beer-recipes-zustand-ts/static/js/384.b6ef12d0.chunk.js",
-    "static/js/87.4dd545a1.chunk.js": "/react-beer-recipes-zustand-ts/static/js/87.4dd545a1.chunk.js",
+    "static/media/NothingInFavorite.jpg": "/react-beer-recipes-zustand-ts/static/media/NothingInFavorite.5cf6f568d99fefc156db.jpg",
+    "static/media/noImg.jpg": "/react-beer-recipes-zustand-ts/static/media/noImg.08ba4a3915c0ff049252.jpg",
     "index.html": "/react-beer-recipes-zustand-ts/index.html",
     "main.7cda0caf.css.map": "/react-beer-recipes-zustand-ts/static/css/main.7cda0caf.css.map",
-    "main.97276989.js.map": "/react-beer-recipes-zustand-ts/static/js/main.97276989.js.map",
-    "97.f5a6f302.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/97.f5a6f302.chunk.js.map",
-    "211.040fb5ad.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/211.040fb5ad.chunk.js.map",
-    "541.9cf8e7bb.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/541.9cf8e7bb.chunk.js.map",
-    "544.a96ef0b9.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/544.a96ef0b9.chunk.js.map",
-    "128.65e5517c.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/128.65e5517c.chunk.js.map",
-    "384.b6ef12d0.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/384.b6ef12d0.chunk.js.map",
-    "87.4dd545a1.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/87.4dd545a1.chunk.js.map"
+    "main.7fc21d3f.js.map": "/react-beer-recipes-zustand-ts/static/js/main.7fc21d3f.js.map",
+    "925.601733b0.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/925.601733b0.chunk.js.map",
+    "211.5fa60cca.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/211.5fa60cca.chunk.js.map",
+    "353.65c7333a.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/353.65c7333a.chunk.js.map",
+    "369.89d6724e.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/369.89d6724e.chunk.js.map",
+    "520.7b8da4f0.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/520.7b8da4f0.chunk.js.map",
+    "617.8086511e.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/617.8086511e.chunk.js.map",
+    "384.b6ef12d0.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/384.b6ef12d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.97276989.js"
+    "static/js/main.7fc21d3f.js"
   ]
 }
