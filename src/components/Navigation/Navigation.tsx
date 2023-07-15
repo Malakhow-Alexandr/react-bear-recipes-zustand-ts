@@ -9,7 +9,7 @@ function Navigation() {
     <Container>
       <Header>
         <nav>
-          <Link to="/">Recipes</Link>
+          <Link to="/">Beer</Link>
           <Link to="/favorite">Favorites</Link>
         </nav>
       </Header>
