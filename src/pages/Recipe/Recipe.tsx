@@ -12,7 +12,6 @@ const Recipe: FC = () => {
 
   const id: number = Number(recipeId);
 
-
   // const backLinkLocationRef = useRef(location.state?.from ?? "/");
 
   useEffect(() => {
@@ -20,6 +19,7 @@ const Recipe: FC = () => {
       try {
         const response = await fetchBeerRecipe(id);
         setBeerRecipe(response);
+        console.log(response);
       } catch (error) {
         console.log(error);
       }
