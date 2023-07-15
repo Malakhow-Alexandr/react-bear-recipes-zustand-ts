@@ -10,7 +10,7 @@ function Navigation() {
       <Header>
         <nav>
           <Link to="/">Recipes</Link>
-          <Link to="/favorite">Favorite</Link>
+          <Link to="/favorite">Favorites</Link>
         </nav>
       </Header>
       <Suspense fallback={<Loader />}>

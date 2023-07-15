@@ -30,7 +30,7 @@ const Recipes: FC = () => {
   }, [currentPage, setBeerRecipes, setCurrentPage]);
 
   return (
-    <div>
+    <>
       <RecipesList recipes={beerRecipes} location={location} />
       <button
         disabled={currentPage === 1}
@@ -48,7 +48,7 @@ const Recipes: FC = () => {
       >
         nextPage
       </button>
-    </div>
+    </>
   );
 };
 
