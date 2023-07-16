@@ -5,13 +5,18 @@ export const PaginationWrapper = styled.div`
   justify-content: center;
   margin-top: auto;
   margin-bottom: 30px;
-
+  
   ul {
     display: flex;
     list-style-type: none;
-    margin-top:auto;
+    margin-top: auto;
     padding: 0;
-
+    @media screen and (max-width: 375px) {
+      transform: scale(0.49)
+    }
+    @media screen and (min-width: 376px) and (max-width: 768px) {
+      transform: scale(0.6)
+    }
     li {
       display: flex;
       align-items: center;
@@ -28,7 +33,7 @@ export const PaginationWrapper = styled.div`
         background-color: orange;
         color: #fff;
       }
-      
+
       &.disabled {
         position: absolute;
         opacity: 0;

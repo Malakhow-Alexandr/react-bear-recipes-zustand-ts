@@ -57,8 +57,8 @@ const Recipes: FC = () => {
           >
             <ReactPaginate
               pageCount={22}
-              pageRangeDisplayed={5}
-              marginPagesDisplayed={2}
+              pageRangeDisplayed={2}
+              marginPagesDisplayed={1}
               onPageChange={({ selected }) => {
                 setCurrentPage(selected + 1);
               }}
