@@ -1,4 +1,5 @@
-import { FC } from "react";
+import React, { FC } from "react";
+
 import {
   LinkStyled,
   Item,
@@ -25,13 +26,24 @@ const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
     (state) => state.removeFavoriteBeerRecipes
   );
 
-  const handleRightClick = (id: number) => {
+  const handleRightClick = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    id: number
+  ) => {
+    event.preventDefault();
     const selectedRecipe = beerRecipes.find((recipe) => recipe.id === id);
     const selectedFavoriteRecipe = favoriteBeerRecipes.find(
       (recipe) => recipe.id === id
     );
-    if (selectedRecipe && !selectedFavoriteRecipe) {
-      addFavoriteBeerRecipes(selectedRecipe);
+    if (selectedRecipe) {
+      if (selectedFavoriteRecipe) {
+        const updatedFavoriteRecipes = favoriteBeerRecipes.filter(
+          (recipe) => recipe.id !== id
+        );
+        removeFromFavorite(updatedFavoriteRecipes);
+      } else {
+        addFavoriteBeerRecipes(selectedRecipe);
+      }
     }
   };
 
@@ -57,7 +69,7 @@ const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
                 className="link"
                 to={`/${id}`}
                 state={{ from: location }}
-                onContextMenu={() => handleRightClick(id)}
+                onContextMenu={(event) => handleRightClick(event, id)}
               >
                 <BeerPicture
                   src={image_url || noImg}
@@ -82,7 +94,8 @@ const RecipesListItem: FC<RecipesListProps> = ({ recipes, location }) => {
               </LinkStyled>
               {isFavorite && (
                 <FavoriteButton onClick={() => handlerDeleteFromFavorite(id)}>
-                  <FavoriteText>Delete</FavoriteText><FavoriteStar />
+                  <FavoriteText>Delete</FavoriteText>
+                  <FavoriteStar />
                 </FavoriteButton>
               )}
             </Item>
