@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/react-beer-recipes-zustand-ts/static/css/main.7cda0caf.css",
-    "main.js": "/react-beer-recipes-zustand-ts/static/js/main.bd173bcb.js",
-    "static/js/907.229309e1.chunk.js": "/react-beer-recipes-zustand-ts/static/js/907.229309e1.chunk.js",
+    "main.js": "/react-beer-recipes-zustand-ts/static/js/main.e7b8ba86.js",
+    "static/js/907.dc239cd2.chunk.js": "/react-beer-recipes-zustand-ts/static/js/907.dc239cd2.chunk.js",
     "static/js/515.44e0cb1c.chunk.js": "/react-beer-recipes-zustand-ts/static/js/515.44e0cb1c.chunk.js",
-    "static/js/522.cfdc3a66.chunk.js": "/react-beer-recipes-zustand-ts/static/js/522.cfdc3a66.chunk.js",
+    "static/js/522.5a42caf7.chunk.js": "/react-beer-recipes-zustand-ts/static/js/522.5a42caf7.chunk.js",
     "static/js/369.89d6724e.chunk.js": "/react-beer-recipes-zustand-ts/static/js/369.89d6724e.chunk.js",
     "static/js/520.7b8da4f0.chunk.js": "/react-beer-recipes-zustand-ts/static/js/520.7b8da4f0.chunk.js",
     "static/js/617.8086511e.chunk.js": "/react-beer-recipes-zustand-ts/static/js/617.8086511e.chunk.js",
@@ -14,10 +14,10 @@
     "static/media/noImg.jpg": "/react-beer-recipes-zustand-ts/static/media/noImg.08ba4a3915c0ff049252.jpg",
     "index.html": "/react-beer-recipes-zustand-ts/index.html",
     "main.7cda0caf.css.map": "/react-beer-recipes-zustand-ts/static/css/main.7cda0caf.css.map",
-    "main.bd173bcb.js.map": "/react-beer-recipes-zustand-ts/static/js/main.bd173bcb.js.map",
-    "907.229309e1.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/907.229309e1.chunk.js.map",
+    "main.e7b8ba86.js.map": "/react-beer-recipes-zustand-ts/static/js/main.e7b8ba86.js.map",
+    "907.dc239cd2.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/907.dc239cd2.chunk.js.map",
     "515.44e0cb1c.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/515.44e0cb1c.chunk.js.map",
-    "522.cfdc3a66.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/522.cfdc3a66.chunk.js.map",
+    "522.5a42caf7.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/522.5a42caf7.chunk.js.map",
     "369.89d6724e.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/369.89d6724e.chunk.js.map",
     "520.7b8da4f0.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/520.7b8da4f0.chunk.js.map",
     "617.8086511e.chunk.js.map": "/react-beer-recipes-zustand-ts/static/js/617.8086511e.chunk.js.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.7cda0caf.css",
-    "static/js/main.bd173bcb.js"
+    "static/js/main.e7b8ba86.js"
   ]
 }
